@@ -1,2 +1,8 @@
-footer: Exclusivamente en <a href="http://www.sixrevisions.com">Six Revisions</a> | Creado por <a href="http://www.csstemplateheaven.com">CssTemplateHeaven</a>
+name: Mis proyectos
 -
+profession: Diseñador Grafico
+-
+email: 
+<hi@yourdomain.com>
+-
+meta_description: Mi portafolio
