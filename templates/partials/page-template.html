@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" if @fb-admin do xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" endif >
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	
+    <title>@title, @name</title>
+	
+	:meta
+	if @fb-admin do :fb endif
+	
+    <link rel="alternate" type="application/atom+xml" href="@root_path/?/feed/"/>
+	
+    <link rel="stylesheet" href="@root_path/public/docs/css/page.css" type="text/css" media="screen, tv, projection, handheld"/>
+    <link rel="stylesheet" href="@root_path/public/docs/css/preview-boxes.css" type="text/css"  media="screen, tv, projection, handheld"/>
+    <link rel="stylesheet" href="@root_path/public/docs/css/page-print.css" type="text/css" media="print"/>
+    <link rel="stylesheet" href="@root_path/public/docs/fontkit/stylesheet.css" type="text/css"/>
+    <link rel="shortcut icon" href="@root_path/content/favicon.ico" />
+  </head>
+  <body  if @background do style="background-image:url('@root_path/content/@background');" endif>
+	:noscript
+    <div id="outer-container"><div id="inner-container">
+      <div id="languages">
+        :languages
+      </div>    
+      <div class="topbar">
+	  :title
+      </div>
+	  :navbar
+      
+	  :title-subtitle
+      
+	  :a-html
+	  :a-images
+	  :text-content
+	  :fb-like
+	  
+	  :images
+	  :video
+	  :swf
+	  :html
+	  
+	  :pdfs
+	  :downloads
+	  :links
+	  
+	  :disqus
+	  if $images do :fb-like endif
+	  
+	  :navbar
+    </div></div>
+	<div id="outer-preview-container"><div id="inner-preview-container">
+	:preview-boxes
+	:footer
+	</div></div>
+	
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="@root_path/public/docs/jsmin/jquery.min.js"><\/script>')</script>
+  
+	if !@no-justify do <script type="text/javascript" src="@root_path/public/docs/jsmin/sweet-justice.min.js"></script> endif
+	<script type="text/javascript" src="@root_path/public/docs/jsmin/jquery.freetile.min.js"></script>
+	<script type="text/javascript" src="@root_path/public/docs/jsmin/jquery.tinysort.min.js"></script>
+
+	<script type="text/javascript" src="@root_path/public/docs/jsmin/gallery.min.js"></script>
+	<script type="text/javascript" src="@root_path/public/docs/jsmin/init-page.min.js"></script>
+        <script type="text/javascript">
+	// Sharing button config...
+	  var addthis_config = {
+	    ui_offset_top: 12,
+	    ui_delay: 300,
+	    ui_use_css: false
+	  }
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+	:extra-html
+  </body>
+</html>

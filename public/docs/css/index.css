@@ -1,0 +1,245 @@
+/*
+  Stylesheet for the Assemblage Template
+  Index & Category Template
+  Copyright (c) 2011 Yiannis Chatzikonstantinou
+  http://yconst.com
+*/
+
+/* Colours */
+
+body, a { color: #404040; }
+
+body { background:#f9f9f9; }
+
+h3 a { color:#000; }
+
+/* Typography */
+
+body {
+  font-family: 'DejaVuSansBook', arial, sans-serif;
+  font-weight:normal;
+  font-size:12px;
+  line-height: 1.3;
+  text-decoration:none;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size:13px;
+  font-weight:normal;
+  margin:0px;
+}
+
+h4 {
+  font-size:13px;
+  font-weight:normal;
+  margin:0px;
+}
+
+/* Layout */
+
+html { overflow-y: scroll; }
+
+body { margin: 8px 0; min-width: 640px }
+
+img { border: none }
+
+#outer-container {
+  text-align:center;
+  min-width:640px;
+  /* max-width:960px; Add here your custom max width*/
+  margin: 0 auto;
+}
+
+#title {
+  min-width:620px;
+  text-align:left;
+  margin:0 auto;
+  padding:2.8em 0;
+  border-bottom:1px solid #ddd;
+}
+#languages{
+  min-width:620px;
+  width: 1260px;
+  text-align:left;
+  margin:0 auto;
+  padding:2.8em 0;
+  border-bottom:1px solid #ddd;
+  color: #666;
+}
+.inline-list > li{
+  list-style: none;
+  float: right;
+  margin-left: 2.8em;
+  display: block;
+}
+.active{
+  text-decoration: underline;
+}
+#desc {
+  min-width:620px;
+  text-align:left;
+  margin:0 auto;
+  padding:0 0 1.8em 0;
+  border-bottom:1px solid #ddd;
+}
+
+#desc p {
+  font-size:18px;
+  max-width:630px;
+}
+
+#tags {
+  width:100%;
+  display:none;
+  
+  position:relative;
+  margin:1px auto;
+  text-align:left;
+}
+
+.tag {
+  line-height:18px;
+  color:#404040;
+  font-size:12px;
+  cursor:pointer;
+  padding-top:1px;
+}
+
+.compact .tag {
+  color: #6e6e6e;
+}
+
+.tag:hover {
+  color:#000;
+}
+
+.nest {
+  display:block;
+  float:left;
+  width:300px;
+  margin:0 10px 0 10px;
+  padding:5px 0 20px 0;
+}
+
+.compact .nest {
+  width:148px;
+  margin:0 10px 0 10px;
+  padding:5px 0 5px 0;
+  
+}
+
+.compact .tag:after {
+  content:"  ⟩ ";
+}
+
+.nestInvis {
+  display:none;
+}
+
+.compact .nestInvis2 {
+  display:none;
+}
+
+
+.compact .border-top {
+  border-top:none;
+}
+
+.tagInactive {
+  color:#888;
+}
+
+.compact .tagInactive {
+  display:none;
+}
+
+.tagInactive:hover {
+  color:#666;
+}
+
+#tip {
+	font-size:11px;
+	color:#777;
+	z-index:1000;
+	float:right;
+	display:none;
+	vertical-align:middle;
+}
+
+.sorting {
+  width:100%;
+  text-align:right;
+  color:#777;
+  cursor:default;
+  font-size:10px;
+  padding: 3px;
+}
+
+.sorting a {
+  cursor:pointer;
+  color:#777;
+  padding: 3px;
+}
+
+.sorting a:hover {
+  color:#000;
+}
+
+.options {
+  position:absolute;
+  right:10px;
+  bottom:2px;
+  padding:2px;
+}
+
+#search-field {
+  border:1px solid #ddd;
+  background:#cfcfd1;
+  width:298px;
+  padding:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+
+#search-field:focus {
+  border:1px solid #fff;
+  background:#fff;
+}
+
+#footer, #footer a {
+  text-align:left;
+  clear:both;
+  font-size:10px;
+  color:#404040;
+  margin: 0 auto;
+}
+
+#footer {
+  padding:1em 0;
+}
+
+.invis1 {
+  display:none;
+}
+
+/** Javascript alert */
+
+.alert {
+  text-align:center;
+  padding:20px;
+  margin:0px;
+  position:relative;
+  left:0px;
+  right:0px;
+  background:#ef4313;
+  color:#fff;
+}

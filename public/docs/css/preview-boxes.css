@@ -1,0 +1,51 @@
+/*
+  Stylesheet for the Assemblage Template
+  Template for Projects Thumbnails Grid
+  Copyright (c) 2011 Yiannis Chatzikonstantinou
+  http://yconst.com
+*/
+
+#preview-container {
+  position:relative;
+  margin:1px auto;
+  text-align:left;
+}
+
+.project {
+  margin:0 10px 20px 10px;
+  width:300px;
+  float:left;
+}
+
+.projectActive .projectFrame {
+  background: #000;
+  color: #fff;
+}
+
+.projectThumb {
+  width:100%;
+}
+
+.projectFrame {
+  display:block;
+  padding:5px 2px;
+  border-bottom:1px solid #ddd;
+}
+
+.projectTitle, .projectDate  {
+  display:block;
+  font-size:12px;
+  line-height:17px;
+}
+
+.project:hover a {
+  text-decoration:none;
+}
+
+.projectTitle:visited {
+  color:#777;
+}
+
+.projectDate {
+  color:#999;
+}

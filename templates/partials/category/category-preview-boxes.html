@@ -1,0 +1,9 @@
+<div id="preview-container" if @sortby do class="sort-@sortby" endif>
+      <script type="text/javascript">
+        //Preliminary show/hide etc. Just to make inital fadein better looking.
+        document.getElementById('preview-container').style.display = 'none';
+      </script> 
+foreach $children do
+  :check-thumb
+endforeach
+</div>

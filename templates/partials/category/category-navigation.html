@@ -1,0 +1,14 @@
+<div class="compact" id="tags">
+  <div class="nest border-top @slug-@index-@siblings_count-nest foreach $children do if $children do @slug-@index-@siblings_count-nest :classes-nests-children endif endforeach">
+    <div class="tag @slug-@index-@siblings_count-tag foreach $children do if $children do @slug-@index-@siblings_count-tag :classes-children endif endforeach" id="@slug-@index-@siblings_count">@page_name</div>
+  </div>
+  <div class="nest border-top parent-is-@slug-@index-@siblings_count foreach $children do if $children do @slug-@index-@siblings_count-nest :classes-nests-children endif endforeach">
+    foreach $children do if $children do
+    <div class="tag @slug-@index-@siblings_count-tag :classes-parents :classes-children" id="@slug-@index-@siblings_count">@title</div>
+    endif endforeach
+  </div>
+  foreach $children do if $children do
+    if !@thumb do :nests-children endif
+  endif endforeach
+  :nest-options
+</div>
