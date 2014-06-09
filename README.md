@@ -1,29 +1,50 @@
-# Stacey 2.3.0
+# Multilanguage Support Stacey CMS and Assemblage r3.
+=======================
 
-## Overview
-Stacey takes content from `.txt` files, image files and implied directory structure and generates a website.
-It is a no-database, dynamic website generator.
+<hr>Multilanguage Support for Stacey CMS and Assemblage it helps you to use
+the Stacey CMS template and Assemblage in two different languages.</hr>
+it adds an asset called language that redirects at the correspondent
+page in the other language.
 
-If you look in the `/content` and `/templates` folders, you should get the general idea of how it all works.
+## TABLE OF CONTENTS
 
-## Installation
+* app/
+* content/
+* public/
+* templates/
+* .htaccess
+* this README.md
+* index.php
 
-Copy to server, `chmod 777 app/_cache`.
+## INSTALL
 
-If you want clean urls, `mv htaccess .htaccess`
+* clone the repository 
+  'git clone https://github.com/luisnicg/multilanguage_stacey_and_assemblage.git'
 
-## Templates
+* Copy to server, `chmod 777 app/_cache`.
 
-There are an additional two sets of templates which can be found at:
-<http://github.com/kolber/stacey-template2> &
-<http://github.com/kolber/stacey-template3>
+  If you want clean urls, `mv htaccess .htaccess`
+
+* You need to upload two versions of your site:
+  one for content/eng/ and one for content/esp/ (English and Spanish in the case of this repo).
+* You may want to change the language in use with your chosen two: 
+	- you need to edit the name of the folder '/content/eng and /content/esp'.
+	- You need to edit the languages variable in '/content/eng/_languages.txt' and '/content/esp/_languages.txt' 
+	- You need to edit  the line: 'window.location.href='@root_path/"your_language"/home/'' 
+
+## Sites using it
+
+'http://www.ilmotorediricerca.eu'
 
 ## Read More
 
 See <http://staceyapp.com> for more detailed usage information.
+See <http://www.yconst.com/web/assemblage/> for more information about Assemblage templates.
 
 ## Copyright/License
 
 Copyright (c) 2009 Anthony Kolber. See `LICENSE` for details.
 Except PHP Markdown Extra which is (c) Michel Fortin (see `/app/parsers/markdown-parser.inc.php` for details) and
 JSON.minify which is (c) Kyle Simpson (see 'app/parsers/json-minifier.inc.php' for details).
+jquery.freetile.js which is (c) 2010-2012, Ioannis (Yannis) Chatzikonstantinou.
+index.css, page-print.css, page.css, preview-boxes.css are (c) 2011 Yannis Chatzikonstantinou.
