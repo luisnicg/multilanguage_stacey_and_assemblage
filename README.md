@@ -1,4 +1,4 @@
-<hr> #>Multilanguage Support Stacey CMS and Assemblage r3.</hr>
+<hr> ##> Multilanguage Support Stacey CMS and Assemblage r3.</hr>
 
 <hr>Multilanguage Support for Stacey CMS and Assemblage it helps you to use
 the Stacey CMS template and Assemblage in two different languages.
