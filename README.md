@@ -1,10 +1,10 @@
 # Multilanguage Support Stacey CMS and Assemblage r3.
-=======================
 
 <hr>Multilanguage Support for Stacey CMS and Assemblage it helps you to use
 the Stacey CMS template and Assemblage in two different languages.</hr>
 it adds an asset called language that redirects at the correspondent
 page in the other language.
+=================================
 
 ## TABLE OF CONTENTS
 
@@ -19,7 +19,7 @@ page in the other language.
 ## INSTALL
 
 * clone the repository 
-  'git clone https://github.com/luisnicg/multilanguage_stacey_and_assemblage.git'
+  'git clone <https://github.com/luisnicg/multilanguage_stacey_and_assemblage.git>'
 
 * Copy to server, `chmod 777 app/_cache`.
 
@@ -34,7 +34,7 @@ page in the other language.
 
 ## Sites using it
 
-'http://www.ilmotorediricerca.eu'
+<http://www.ilmotorediricerca.eu>
 
 ## Read More
 
@@ -47,4 +47,4 @@ Copyright (c) 2009 Anthony Kolber. See `LICENSE` for details.
 Except PHP Markdown Extra which is (c) Michel Fortin (see `/app/parsers/markdown-parser.inc.php` for details) and
 JSON.minify which is (c) Kyle Simpson (see 'app/parsers/json-minifier.inc.php' for details).
 jquery.freetile.js which is (c) 2010-2012, Ioannis (Yannis) Chatzikonstantinou.
-index.css, page-print.css, page.css, preview-boxes.css are (c) 2011 Yannis Chatzikonstantinou.
+
